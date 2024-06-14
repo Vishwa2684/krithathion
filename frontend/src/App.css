@@ -1,0 +1,107 @@
+/* UNIVERSAL CSS FOR ALL MY PAGES HERE NOW */
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    color: #fff;
+    /* padding: 20px; */
+    margin: 0;
+    box-sizing: border-box;
+    z-index: 2; 
+}
+
+
+.sidebar.open {
+  left: 0; 
+}
+
+.chat-container {
+  display: flex;
+  height: 100vh; /* Set the chat container to take the full viewport height */
+}
+
+
+.chat-open {
+  margin-left: 200px; /* Adjust this value according to your sidebar width */
+  transition: margin-left 0.3s ease; /* Add transition for smooth animation */
+}
+
+.chat-closed {
+  margin-left: 20px; /* Adjust this value according to your sidebar width */
+  transition: margin-left 0.3s ease; /* Add transition for smooth animation */
+}
+
+.user-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.user-name {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.logout-btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}

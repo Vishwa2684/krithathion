@@ -1,0 +1,58 @@
+/* Signin.css */
+
+/* Container styles */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* Heading styles */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Input styles */
+input {
+    width: 100%;
+    text-color:#000;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f6f6f6;
+}
+
+/* Button styles */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+#email,#password{
+    color:#000;
+}
+
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Google Signup button styles */
+.google-btn {
+    background-color: #db4437;
+}
+
+.google-btn:hover {
+    background-color: #c1351d;
+}
