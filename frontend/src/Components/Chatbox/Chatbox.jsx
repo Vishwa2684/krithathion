@@ -50,40 +50,6 @@ export default function Chatbox({open}) {
   };
 
 
-  // const handleSaveItinerary = async () => {
-  //   console.log('Clicked on itinerary');
-    
-  //   try {
-  //     // Find the latest bot message
-  //     const latestBotMessage = messages.find((message) => message.role === 'bot');
-  //     if (!latestBotMessage) {
-  //       toast.error('No itinerary generated yet');
-  //       return;
-  //     }
-  
-  //     // Construct the itinerary object to save
-  //     const itineraryData = {
-  //       title: `Trip to ${city}`,
-  //       city: city,
-  //       duration: duration,
-  //       activities: [], // Placeholder for activities (to be populated based on requirements)
-  //       botMessage: latestBotMessage.content, // Store the bot-generated itinerary message
-  //       createdAt: serverTimestamp(),
-  //       userId: user.uid,
-  //     };
-  
-  //     // Add the itinerary to Firestore
-  //     const docRef = await addDoc(collection(db, 'itineraries'), itineraryData);
-  //     console.log('Itinerary saved with ID: ', docRef.id);
-  
-  //     // Optionally navigate to a success page or display a success message
-  //     // navigate('/success'); // Example navigation to a success page
-  //   } catch (error) {
-  //     console.error('Error saving itinerary: ', error);
-  //     toast.error('Error occurred while saving itinerary');
-  //   }
-  // };
-
   const handleSaveItinerary = async (botMessage, messageIndex) => {
     console.log('Clicked on itinerary', messageIndex);
     
