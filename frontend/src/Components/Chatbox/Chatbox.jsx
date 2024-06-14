@@ -48,7 +48,7 @@ export default function Chatbox({open}) {
       setDuration('');
     }
   };
-
+ 
 
   const handleSaveItinerary = async (botMessage, messageIndex) => {
     console.log('Clicked on itinerary', messageIndex);

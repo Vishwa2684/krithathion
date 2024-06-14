@@ -38,6 +38,17 @@ form {
   margin: 40px 0;
 }
 
+
+.input-field {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: black; /* This will make the text black */
+}
+
 input[type="text"] {
   background-color: #fff;
   border: 2px solid #ccc;
